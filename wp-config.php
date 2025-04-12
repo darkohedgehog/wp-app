@@ -90,6 +90,11 @@ define('JWT_AUTH_SECRET_KEY', 'hedgehog-1234567890');
 define('WP_HOME', 'https://wp-graphql.onrender.com');
 define('WP_SITEURL', 'https://wp-graphql.onrender.com');
 
+define('FORCE_SSL_ADMIN', true);
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '', 'https') !== false) {
+    $_SERVER['HTTPS'] = 'on';
+}
+
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

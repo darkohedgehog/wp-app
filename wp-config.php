@@ -86,6 +86,10 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 
 define( 'WP_ENVIRONMENT_TYPE', 'local' );
 define('JWT_AUTH_SECRET_KEY', 'hedgehog-1234567890');
+
+define('WP_HOME', 'https://wp-graphql.onrender.com');
+define('WP_SITEURL', 'https://wp-graphql.onrender.com');
+
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
